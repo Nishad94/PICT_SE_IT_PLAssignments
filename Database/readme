@@ -1,0 +1,12 @@
+A basic student database program made using C.
+
+Features proposed:
+   1. Stores name,phone number, department, address, roll number and marks of students.
+   2. Search records by:
+   		1. Name
+   		2. Phone number
+   		3. Student Department
+   		4. City
+   		5. State
+   		6. Roll Number
+   3. Delete Records
