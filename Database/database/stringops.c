@@ -6,11 +6,8 @@
    4. Palindrome
    5. Substring
 */
-#include <stdio.h>
-#include <stdlib.h>
-#define MAX 100 //Maximum length of string
 
-
+void make_heading(char s[]);
 void read_string(char s1[]);
 int strlength(char s[]);
 int string_compare(char s1[], char s2[]);
@@ -18,6 +15,32 @@ void string_copy(char dest[], char src[]);
 void string_reverse(char dest[], char src[]);
 int string_palindrome(char s1[]);
 int substring(char source[], char subpart[]);
+
+//Interface(Heading)
+void make_heading(char s[])
+{
+    int i, j, tabs_to_center=3;
+    system("clear");
+    i = strlen(s);
+    for(j=0; j<tabs_to_center; j++)
+        putchar('\t');
+    for(j=0; j<= (i+1); j++)
+        putchar('#');
+    putchar('\n');
+    for(j=0; j<tabs_to_center; j++)
+        putchar('\t');
+    putchar(' ');
+    for(j=0; j<i; j++)
+        putchar(s[j]);
+    putchar(' ');
+    putchar('\n');
+    for(j=0; j<tabs_to_center; j++)
+        putchar('\t');
+    for(j=0; j<= (i+1); j++)
+        putchar('#');
+    printf("\n\n");
+}
+//End of interface module
 
 
 //Function to read a string
