@@ -1,4 +1,9 @@
 #include "definitions.h"
+#include "stringops.c"
+#include "add_data.c"
+#include "validation.c"
+#include "initialization.c"
+#include "searching.c"
 
 int main()
 {
@@ -11,11 +16,31 @@ int main()
         int i;
         //Search fror next free position in the structure array
         i = search_rollnum(-1,dbase);
+        //Add record at this position
         add_record(i,dbase);
-        printf("Name: %s\nMobile Number: %s\n",dbase[0].name,dbase[0].mobile_num);
     }
+    break;
 
+    case 2: //Search
+    {
 
+    }
+    break;
+
+    case 3: //Display Data
+    {
+
+    }
+    break;
+
+    case 4: //Delete record
+    {
+
+    }
+    break;
+
+    default:
+    printf("Wrong choice entered\n");
     }
     return 0;
 }
